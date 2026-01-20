@@ -21,13 +21,13 @@ function pedirTarea(){
 }
 
 const validarTarea= function(tarea){
-    return tarea !== " " && tarea !== null
+    return tarea !==  "" && tarea !== null
 }
 
 const mostrarTarea=()=>{
     console.log("Lista de Tareas")
-    for(let i =0; i<tareas.length;i++){
-        console.log(i+ " " + tareas[i])
+    for(let i =1; i<tareas.length;i++){
+        console.log(i+ "" + tareas[i])
     }
 }
 alert("Hola "+ saludo + " Bienvenido al gestor de tareas")
